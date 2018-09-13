@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_package = "com.swiftsnail.grpc.server.generated";
+option java_outer_classname = "RTB";
+// SPEED, CODE_SIZE, or LITE_RUNTIME
+option optimize_for = SPEED;
+option java_multiple_files = true;
+
+service BidService {
+    rpc bid (BidRequest) returns (BidResponse) {
+    }
+    rpc keep_bid (stream BidRequest) returns (stream BidResponse) {
+    }
+}
+
+message BidRequest {
+    string bid = 1;
+}
+
+message BidResponse {
+    string bid = 1;
+    string ad = 2;
+}
