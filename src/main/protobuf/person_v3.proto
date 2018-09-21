@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.swiftsnail.generated";
+option java_outer_classname = "V3";
+
+message Person {
+    string name = 1;
+    int32 age = 2;
+}

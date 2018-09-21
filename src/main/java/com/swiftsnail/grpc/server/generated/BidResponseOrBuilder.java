@@ -4,28 +4,26 @@
 package com.swiftsnail.grpc.server.generated;
 
 public interface BidResponseOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:BidResponse)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:BidResponse)
+    com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>string bid = 1;</code>
-     */
-    java.lang.String getBid();
+  /**
+   * <code>string bid = 1;</code>
+   */
+  java.lang.String getBid();
+  /**
+   * <code>string bid = 1;</code>
+   */
+  com.google.protobuf.ByteString
+      getBidBytes();
 
-    /**
-     * <code>string bid = 1;</code>
-     */
-    com.google.protobuf.ByteString
-    getBidBytes();
-
-    /**
-     * <code>string ad = 2;</code>
-     */
-    java.lang.String getAd();
-
-    /**
-     * <code>string ad = 2;</code>
-     */
-    com.google.protobuf.ByteString
-    getAdBytes();
+  /**
+   * <code>string ad = 2;</code>
+   */
+  java.lang.String getAd();
+  /**
+   * <code>string ad = 2;</code>
+   */
+  com.google.protobuf.ByteString
+      getAdBytes();
 }
